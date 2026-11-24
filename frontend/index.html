@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MeteoLab - Peminjaman Instrumen Laboratorium Meteorologi</title>
+  <title>PinjamInstru - Peminjaman Instrumen Laboratorium Meteorologi</title>
   <meta name="description" content="Lihat katalog instrumen meteorologi dan pinjam alat dari laboratorium.">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +12,11 @@
 
   <header class="navbar">
     <div class="container">
-      <a class="brand" href="index.html"><span class="brand-dot"></span>MeteoLab</a>
+      <a class="brand" href="index.html"><svg class="brand-logo" viewBox="0 0 32 44" width="26" height="36" aria-hidden="true">
+          <circle cx="16" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="4.5"/>
+          <circle cx="16" cy="31" r="10" fill="none" stroke="#1d63d6" stroke-width="4.5"/>
+          <circle cx="16" cy="21.5" r="2.6" fill="#f5b82e"/>
+        </svg><span>PinjamInstru</span></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html" aria-current="page">Beranda</a></li>
@@ -25,49 +30,24 @@
 
   <main>
     <section class="hero">
-      <!-- Garis isobar: hiasan peta cuaca -->
-      <svg class="hero-isobars" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <g transform="translate(900 280) rotate(-18)">
-          <ellipse rx="70" ry="38"/>
-          <ellipse rx="150" ry="85"/>
-          <ellipse rx="245" ry="140"/>
-          <ellipse rx="350" ry="200"/>
-          <ellipse rx="470" ry="270"/>
-          <ellipse rx="610" ry="350"/>
-        </g>
-        <text x="905" y="285">1016</text>
-        <text x="1030" y="250">1012</text>
-        <text x="1150" y="215">1008</text>
-      </svg>
-      <div class="container">
-        <h1>Pinjam instrumen meteorologi dari laboratorium.</h1>
-        <p>Cek alat yang tersedia, isi formulir peminjaman, dan lihat di mana saja stasiun pengamatan kami berada.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="catalog.html">Lihat katalog</a>
-          <a class="btn btn-outline" href="borrowing.html">Ajukan peminjaman</a>
-        </div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Pinjam instrumen meteorologi dari laboratorium</h1>
+      <p>Cek alat yang tersedia, isi formulir peminjaman, dan lihat di mana saja stasiun pengamatan kami berada.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="catalog.html">Lihat katalog</a>
+        <a class="btn btn-outline" href="borrowing.html">Ajukan peminjaman</a>
       </div>
-    </section>
-
-    <dl class="stats" aria-label="Ringkasan instrumen">
-      <div class="stat"><dt>Total instrumen</dt><dd id="stat-total">-</dd></div>
-      <div class="stat"><dt>Tersedia</dt><dd id="stat-available">-</dd></div>
-      <div class="stat"><dt>Sedang dipinjam</dt><dd id="stat-borrowed">-</dd></div>
-      <div class="stat"><dt>Dalam perawatan</dt><dd id="stat-maintenance">-</dd></div>
-    </dl>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Instrumen yang bisa dipinjam sekarang</h2>
-          <p>Empat contoh dari alat yang statusnya tersedia.</p>
-        </div>
-        <div class="instrument-grid" id="featured-grid">
-          <p class="state-msg">Memuat instrumen...</p>
-        </div>
-        <a class="section-link" href="catalog.html">Lihat semua instrumen</a>
-      </div>
-    </section>
+    </div>
+    <aside class="hero-card" aria-labelledby="hero-card-title">
+      <h2 id="hero-card-title">Status alat hari ini</h2>
+      <ul class="status-list" id="hero-status">
+        <li class="status-empty">Memuat data...</li>
+      </ul>
+      <a class="section-link" href="catalog.html">Lihat semua instrumen</a>
+    </aside>
+  </div>
+</section>
 
     <section class="section section--white">
       <div class="container">
@@ -110,8 +90,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p><strong>MeteoLab</strong><br>Laboratorium Meteorologi</p>
-      <p>Kontak pengelola: <a href="mailto:lab@example.ac.id">lab@example.ac.id</a><br>Jam layanan: Senin-Jumat, 08.00-16.00</p>
+      <p><strong>PinjamInstru</strong><br>Laboratorium Meteorologi</p>
+      <p>Kontak pengelola: <a href="mailto:lab@kelompok8.ac.id">lab @meteokelompok8.itb.ac.id</a><br>Jam layanan: Senin-Jumat, 08.00-16.00</p>
     </div>
   </footer>
 

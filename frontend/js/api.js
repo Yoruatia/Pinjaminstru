@@ -1,14 +1,4 @@
-/* ==========================================================
-   api.js - satu-satunya tempat yang bicara dengan backend.
-   Selama backend belum jadi: biarkan USE_MOCK = true.
-   Saat integrasi: ganti USE_MOCK = false dan sesuaikan API_BASE.
 
-   KONTRAK API (usulan, samakan dengan tim backend):
-   GET /api/instruments  ->  [ { ...field di bawah } ]
-   Nama field mengikuti tabel `instruments` di skema database.
-   `status` = hasil gabungan lifecycle_status + reservasi aktif:
-   "available" | "borrowed" | "maintenance" | "deployed"
-   ========================================================== */
 
 const API_BASE = "http://localhost:3000/api";
 const USE_MOCK = true;
