@@ -1,0 +1,17 @@
+# Dependensi Node (ukurannya besar, bisa diinstal ulang)
+node_modules/
+
+# Rahasia: password database, API key
+.env
+.env.*
+!.env.example
+
+# File upload pengguna
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# File sampah sistem/editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
