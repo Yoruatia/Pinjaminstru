@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PinjamInstru - Peminjaman Instrumen Laboratorium Meteorologi</title>
+  <meta name="description" content="Lihat katalog instrumen meteorologi dan pinjam alat dari laboratorium.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html"><svg class="brand-logo" viewBox="0 0 32 44" width="26" height="36" aria-hidden="true">
+          <circle cx="16" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="4.5"/>
+          <circle cx="16" cy="31" r="10" fill="none" stroke="#1d63d6" stroke-width="4.5"/>
+          <circle cx="16" cy="21.5" r="2.6" fill="#f5b82e"/>
+        </svg><span>PinjamInstru</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Beranda</a></li>
+        <li><a href="catalog.html">Katalog</a></li>
+        <li><a href="network-map.html">Peta jaringan</a></li>
+        <li><a href="borrowing.html">Pinjam</a></li>
+        <li><a href="returning.html">Kembalikan</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Pinjam instrumen meteorologi dari laboratorium.</h1>
+      <p>Cek alat yang tersedia, isi formulir peminjaman, dan lihat di mana saja stasiun pengamatan kami berada.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="catalog.html">Lihat katalog</a>
+        <a class="btn btn-outline" href="borrowing.html">Ajukan peminjaman</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-labelledby="hero-card-title">
+      <h2 id="hero-card-title">Status alat hari ini</h2>
+      <ul class="status-list" id="hero-status">
+        <li class="status-empty">Memuat data...</li>
+      </ul>
+      <a class="section-link" href="catalog.html">Lihat semua instrumen</a>
+    </aside>
+  </div>
+</section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-head">
+          <h2>Cara meminjam</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Pilih alat</h3>
+            <p>Cari di katalog dan pastikan statusnya tersedia.</p>
+          </li>
+          <li>
+            <h3>Isi formulir</h3>
+            <p>Tulis identitas, tujuan, dan tanggal pinjam serta kembali.</p>
+          </li>
+          <li>
+            <h3>Tunggu persetujuan</h3>
+            <p>Staf laboratorium memeriksa permohonanmu.</p>
+          </li>
+          <li>
+            <h3>Ambil dan kembalikan</h3>
+            <p>Ambil alat di lab, lalu isi formulir pengembalian saat selesai.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container network-teaser">
+        <div>
+          <h2>Jaringan stasiun pengamatan</h2>
+          <p>Lihat titik stasiun cuaca dan hujan di sekitar kampus, lengkap dengan instrumen yang terpasang di tiap stasiun.</p>
+          <a class="btn btn-dark" href="network-map.html">Buka peta</a>
+        </div>
+        <!-- Placeholder: ganti dengan gambar peta atau mini-map Leaflet nanti -->
+        <div class="map-preview" role="img" aria-label="Pratinjau peta stasiun pengamatan"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>PinjamInstru</strong><br>Laboratorium Meteorologi</p>
+      <p>Kontak pengelola: <a href="mailto:lab@kelompok8.ac.id">lab @meteokelompok8.itb.ac.id</a><br>Jam layanan: Senin-Jumat, 08.00-16.00</p>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
